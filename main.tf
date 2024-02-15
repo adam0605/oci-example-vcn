@@ -20,7 +20,7 @@
 #}
 
 provider "oci" {
-  region           = "ap-seoul-1"
+  region           = var.region
   ignore_defined_tags      = ["testexamples-tag-namespace.tf-example-tag"]
 }
 
@@ -28,7 +28,7 @@ provider "oci" {
 resource "oci_core_vcn" "vcn" {
   cidr_blocks    = ["10.0.0.0/16","11.0.0.0/16"]
   dns_label      = "vcn"
-  compartment_id = "ocid1.tenancy.oc1..aaaaaaaa77t5pz2cq6vlngxlaejgxg6frbtduveaehyqxijyfq2gr2mds7pa"
+  compartment_id = var.compartment_ocid
   display_name   = "vcn_demo"
 }
 
