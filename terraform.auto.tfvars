@@ -1,3 +1,3 @@
-compartment_ocid = "ocid1.tenancy.oc1..aaaaaaaa77t5pz2cq6vlngxlaejgxg6frbtduveaehyqxijyfq2gr2mds7pa"
+compartment_ocid = ""
 
-region = "ap-seoul-1"
+region = ""

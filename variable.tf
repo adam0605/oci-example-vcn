@@ -4,7 +4,7 @@ variable "compartment_ocid" {
 }
 
 variable "region" {
-  default = "ap-seoul-1"
+  default = ""
   description = "Region"
   type = string
 }
